@@ -1,0 +1,300 @@
+G:\Storage\C#\Нечто для обучения\NewAPI\obj\Debug\NewAPI.csproj.AssemblyReference.cache
+G:\Storage\C#\Нечто для обучения\NewAPI\obj\Debug\NewAPI.csproj.CoreCompileInputs.cache
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\NewAPI.dll.config
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\NewAPI.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\NewAPI.pdb
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csc.exe
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csc.exe.config
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csc.rsp
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csi.exe
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csi.exe.config
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\csi.rsp
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.AppContext.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Collections.Immutable.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Console.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Globalization.Calendars.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.IO.Compression.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.IO.FileSystem.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Net.Http.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Net.Sockets.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Reflection.Metadata.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.ValueTuple.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Xml.XPath.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\vbc.exe
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\vbc.exe.config
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\vbc.rsp
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\VBCSCompiler.exe
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\roslyn\VBCSCompiler.exe.config
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Antlr3.Runtime.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\EntityFramework.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\EntityFramework.SqlServer.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Microsoft.Web.Infrastructure.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Newtonsoft.Json.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Net.Http.Formatting.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Helpers.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Http.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Http.WebHost.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Mvc.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Optimization.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Razor.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.Deployment.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.Razor.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\WebGrease.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\EntityFramework.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\EntityFramework.SqlServer.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Newtonsoft.Json.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Net.Http.Formatting.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Helpers.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Http.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Http.WebHost.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Mvc.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Optimization.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.Razor.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.Deployment.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\System.Web.WebPages.Razor.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Antlr3.Runtime.pdb
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\EntityFramework.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Net.Http.Formatting.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Helpers.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Http.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Http.WebHost.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Mvc.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Optimization.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.Razor.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.WebPages.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.WebPages.Deployment.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\bin\ru\System.Web.WebPages.Razor.resources.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\obj\Debug\NewAPI.csproj.CopyComplete
+G:\Storage\C#\Нечто для обучения\NewAPI\obj\Debug\NewAPI.dll
+G:\Storage\C#\Нечто для обучения\NewAPI\obj\Debug\NewAPI.pdb
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\NewAPI.dll.config
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\NewAPI.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\NewAPI.pdb
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csc.exe
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csc.exe.config
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csc.rsp
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csi.exe
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csi.exe.config
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\csi.rsp
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.AppContext.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Console.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Net.Http.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\vbc.exe
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\vbc.exe.config
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\vbc.rsp
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Antlr3.Runtime.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\EntityFramework.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Newtonsoft.Json.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Helpers.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Http.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Mvc.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Optimization.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Razor.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\WebGrease.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\EntityFramework.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Newtonsoft.Json.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Helpers.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Http.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Mvc.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Optimization.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.Razor.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Antlr3.Runtime.pdb
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\EntityFramework.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Http.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.Razor.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\obj\Debug\NewAPI.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\obj\Debug\NewAPI.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\obj\Debug\NewAPI.csproj.CopyComplete
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\obj\Debug\NewAPI.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewAPI\obj\Debug\NewAPI.pdb
+C:\Users\danii\Desktop\Designing\obj\Debug\NewAPI.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Designing\obj\Debug\NewAPI.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Designing\obj\Debug\NewAPI.dll
+C:\Users\danii\Desktop\Designing\obj\Debug\NewAPI.pdb
+C:\Users\danii\Desktop\Designing\bin\NewAPI.dll.config
+C:\Users\danii\Desktop\Designing\bin\NewAPI.dll
+C:\Users\danii\Desktop\Designing\bin\NewAPI.pdb
+C:\Users\danii\Desktop\Designing\bin\roslyn\csc.exe
+C:\Users\danii\Desktop\Designing\bin\roslyn\csc.exe.config
+C:\Users\danii\Desktop\Designing\bin\roslyn\csc.rsp
+C:\Users\danii\Desktop\Designing\bin\roslyn\csi.exe
+C:\Users\danii\Desktop\Designing\bin\roslyn\csi.exe.config
+C:\Users\danii\Desktop\Designing\bin\roslyn\csi.rsp
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\danii\Desktop\Designing\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.AppContext.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Console.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.IO.Compression.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Net.Http.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Net.Sockets.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.ValueTuple.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Xml.XPath.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\danii\Desktop\Designing\bin\roslyn\vbc.exe
+C:\Users\danii\Desktop\Designing\bin\roslyn\vbc.exe.config
+C:\Users\danii\Desktop\Designing\bin\roslyn\vbc.rsp
+C:\Users\danii\Desktop\Designing\bin\roslyn\VBCSCompiler.exe
+C:\Users\danii\Desktop\Designing\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\danii\Desktop\Designing\bin\Antlr3.Runtime.dll
+C:\Users\danii\Desktop\Designing\bin\EntityFramework.dll
+C:\Users\danii\Desktop\Designing\bin\EntityFramework.SqlServer.dll
+C:\Users\danii\Desktop\Designing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\danii\Desktop\Designing\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\danii\Desktop\Designing\bin\Newtonsoft.Json.dll
+C:\Users\danii\Desktop\Designing\bin\System.Net.Http.Formatting.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Helpers.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Http.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Http.WebHost.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Mvc.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Optimization.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.Razor.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.Deployment.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.dll
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.Razor.dll
+C:\Users\danii\Desktop\Designing\bin\WebGrease.dll
+C:\Users\danii\Desktop\Designing\bin\EntityFramework.xml
+C:\Users\danii\Desktop\Designing\bin\EntityFramework.SqlServer.xml
+C:\Users\danii\Desktop\Designing\bin\Newtonsoft.Json.xml
+C:\Users\danii\Desktop\Designing\bin\System.Net.Http.Formatting.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Helpers.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Http.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Http.WebHost.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Mvc.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Optimization.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.Razor.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.Deployment.xml
+C:\Users\danii\Desktop\Designing\bin\System.Web.WebPages.Razor.xml
+C:\Users\danii\Desktop\Designing\bin\Antlr3.Runtime.pdb
+C:\Users\danii\Desktop\Designing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\danii\Desktop\Designing\bin\ru\EntityFramework.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Http.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.Razor.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\danii\Desktop\Designing\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\danii\Desktop\Designing\obj\Debug\NewAPI.csproj.CopyComplete

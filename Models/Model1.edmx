@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище NewSession1Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Discussion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskId" Type="int" />
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="Text" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="20" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="20" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Observer">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="EmployeeId" Type="int" Nullable="false" />
+          <Property Name="TaskId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="ShortTitle" Type="nvarchar" MaxLength="20" />
+          <Property Name="Icon" Type="image" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="DeletedTime" Type="datetime" />
+          <Property Name="StartScheduledDate" Type="date" />
+          <Property Name="FinishScheduledDate" Type="date" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreatorEmployeeId" Type="int" />
+          <Property Name="ResponsibleEmployeeId" Type="int" />
+        </EntityType>
+        <EntityType Name="StatusHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskId" Type="int" />
+          <Property Name="OldStatusId" Type="int" />
+          <Property Name="NewStatusId" Type="int" />
+          <Property Name="UpdateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjectId" Type="int" />
+          <Property Name="FullTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="ShortTitle" Type="nvarchar" MaxLength="20" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="ExecuriveEmployeeId" Type="int" />
+          <Property Name="StatusId" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="DeletedTime" Type="datetime" />
+          <Property Name="Deadline" Type="datetime" />
+          <Property Name="StartActualTime" Type="datetime" />
+          <Property Name="FinishActualTime" Type="datetime" />
+          <Property Name="PreviousTaskId" Type="int" />
+        </EntityType>
+        <EntityType Name="TaskStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="ColorHex" Type="nvarchar" MaxLength="7" />
+        </EntityType>
+        <Association Name="FK_Discussion_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Discussion" Type="Self.Discussion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Discussion">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discussion_Task">
+          <End Role="Task" Type="Self.Task" Multiplicity="0..1" />
+          <End Role="Discussion" Type="Self.Discussion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Discussion">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Observer_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Observer" Type="Self.Observer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Observer">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Observer_Task">
+          <End Role="Task" Type="Self.Task" Multiplicity="1" />
+          <End Role="Observer" Type="Self.Observer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Observer">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Project_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Project" Type="Self.Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="CreatorEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Project_Employee1">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Project" Type="Self.Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="ResponsibleEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_Task">
+          <End Role="Task" Type="Self.Task" Multiplicity="0..1" />
+          <End Role="StatusHistory" Type="Self.StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_TaskStatus">
+          <End Role="TaskStatus" Type="Self.TaskStatus" Multiplicity="0..1" />
+          <End Role="StatusHistory" Type="Self.StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="OldStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_TaskStatus1">
+          <End Role="TaskStatus" Type="Self.TaskStatus" Multiplicity="0..1" />
+          <End Role="StatusHistory" Type="Self.StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="NewStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ExecuriveEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Project">
+          <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_TaskStatus">
+          <End Role="TaskStatus" Type="Self.TaskStatus" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="StatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище NewSession1ModelContainer">
+          <EntitySet Name="Discussion" EntityType="Self.Discussion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Observer" EntityType="Self.Observer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StatusHistory" EntityType="Self.StatusHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaskStatus" EntityType="Self.TaskStatus" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Discussion_Employee" Association="Self.FK_Discussion_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Discussion" EntitySet="Discussion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discussion_Task" Association="Self.FK_Discussion_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="Discussion" EntitySet="Discussion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Observer_Employee" Association="Self.FK_Observer_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Observer" EntitySet="Observer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Observer_Task" Association="Self.FK_Observer_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="Observer" EntitySet="Observer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Project_Employee" Association="Self.FK_Project_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Project_Employee1" Association="Self.FK_Project_Employee1">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_Task" Association="Self.FK_StatusHistory_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_TaskStatus" Association="Self.FK_StatusHistory_TaskStatus">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_TaskStatus1" Association="Self.FK_StatusHistory_TaskStatus1">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Employee" Association="Self.FK_Task_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Project" Association="Self.FK_Task_Project">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_TaskStatus" Association="Self.FK_Task_TaskStatus">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NewSession1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="NewSession1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Discussion" EntityType="NewSession1Model.Discussion" />
+          <EntitySet Name="Employee" EntityType="NewSession1Model.Employee" />
+          <EntitySet Name="Project" EntityType="NewSession1Model.Project" />
+          <EntitySet Name="StatusHistory" EntityType="NewSession1Model.StatusHistory" />
+          <EntitySet Name="sysdiagrams" EntityType="NewSession1Model.sysdiagrams" />
+          <EntitySet Name="Task" EntityType="NewSession1Model.Task" />
+          <EntitySet Name="TaskStatus" EntityType="NewSession1Model.TaskStatus" />
+          <AssociationSet Name="FK_Discussion_Employee" Association="NewSession1Model.FK_Discussion_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Discussion" EntitySet="Discussion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discussion_Task" Association="NewSession1Model.FK_Discussion_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="Discussion" EntitySet="Discussion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Project_Employee" Association="NewSession1Model.FK_Project_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Project_Employee1" Association="NewSession1Model.FK_Project_Employee1">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Employee" Association="NewSession1Model.FK_Task_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Project" Association="NewSession1Model.FK_Task_Project">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_Task" Association="NewSession1Model.FK_StatusHistory_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_TaskStatus" Association="NewSession1Model.FK_StatusHistory_TaskStatus">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StatusHistory_TaskStatus1" Association="NewSession1Model.FK_StatusHistory_TaskStatus1">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="StatusHistory" EntitySet="StatusHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_TaskStatus" Association="NewSession1Model.FK_Task_TaskStatus">
+            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="Observer" Association="NewSession1Model.Observer">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Discussion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="Int32" />
+          <Property Name="EmployeeId" Type="Int32" />
+          <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Employee" Relationship="NewSession1Model.FK_Discussion_Employee" FromRole="Discussion" ToRole="Employee" />
+          <NavigationProperty Name="Task" Relationship="NewSession1Model.FK_Discussion_Task" FromRole="Discussion" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Discussion" Relationship="NewSession1Model.FK_Discussion_Employee" FromRole="Employee" ToRole="Discussion" />
+          <NavigationProperty Name="Project" Relationship="NewSession1Model.FK_Project_Employee" FromRole="Employee" ToRole="Project" />
+          <NavigationProperty Name="Project1" Relationship="NewSession1Model.FK_Project_Employee1" FromRole="Employee" ToRole="Project" />
+          <NavigationProperty Name="Task" Relationship="NewSession1Model.FK_Task_Employee" FromRole="Employee" ToRole="Task" />
+          <NavigationProperty Name="Task1" Relationship="NewSession1Model.Observer" FromRole="Employee" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ShortTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Icon" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="DeletedTime" Type="DateTime" Precision="3" />
+          <Property Name="StartScheduledDate" Type="DateTime" Precision="0" />
+          <Property Name="FinishScheduledDate" Type="DateTime" Precision="0" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CreatorEmployeeId" Type="Int32" />
+          <Property Name="ResponsibleEmployeeId" Type="Int32" />
+          <NavigationProperty Name="Employee" Relationship="NewSession1Model.FK_Project_Employee" FromRole="Project" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="NewSession1Model.FK_Project_Employee1" FromRole="Project" ToRole="Employee" />
+          <NavigationProperty Name="Task" Relationship="NewSession1Model.FK_Task_Project" FromRole="Project" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="StatusHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="Int32" />
+          <Property Name="OldStatusId" Type="Int32" />
+          <Property Name="NewStatusId" Type="Int32" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Task" Relationship="NewSession1Model.FK_StatusHistory_Task" FromRole="StatusHistory" ToRole="Task" />
+          <NavigationProperty Name="TaskStatus" Relationship="NewSession1Model.FK_StatusHistory_TaskStatus" FromRole="StatusHistory" ToRole="TaskStatus" />
+          <NavigationProperty Name="TaskStatus1" Relationship="NewSession1Model.FK_StatusHistory_TaskStatus1" FromRole="StatusHistory" ToRole="TaskStatus" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectId" Type="Int32" />
+          <Property Name="FullTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ShortTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ExecuriveEmployeeId" Type="Int32" />
+          <Property Name="StatusId" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="DeletedTime" Type="DateTime" Precision="3" />
+          <Property Name="Deadline" Type="DateTime" Precision="3" />
+          <Property Name="StartActualTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishActualTime" Type="DateTime" Precision="3" />
+          <Property Name="PreviousTaskId" Type="Int32" />
+          <NavigationProperty Name="Discussion" Relationship="NewSession1Model.FK_Discussion_Task" FromRole="Task" ToRole="Discussion" />
+          <NavigationProperty Name="Employee" Relationship="NewSession1Model.FK_Task_Employee" FromRole="Task" ToRole="Employee" />
+          <NavigationProperty Name="Project" Relationship="NewSession1Model.FK_Task_Project" FromRole="Task" ToRole="Project" />
+          <NavigationProperty Name="StatusHistory" Relationship="NewSession1Model.FK_StatusHistory_Task" FromRole="Task" ToRole="StatusHistory" />
+          <NavigationProperty Name="TaskStatus" Relationship="NewSession1Model.FK_Task_TaskStatus" FromRole="Task" ToRole="TaskStatus" />
+          <NavigationProperty Name="Employee1" Relationship="NewSession1Model.Observer" FromRole="Task" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="TaskStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ColorHex" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="StatusHistory" Relationship="NewSession1Model.FK_StatusHistory_TaskStatus" FromRole="TaskStatus" ToRole="StatusHistory" />
+          <NavigationProperty Name="StatusHistory1" Relationship="NewSession1Model.FK_StatusHistory_TaskStatus1" FromRole="TaskStatus" ToRole="StatusHistory" />
+          <NavigationProperty Name="Task" Relationship="NewSession1Model.FK_Task_TaskStatus" FromRole="TaskStatus" ToRole="Task" />
+        </EntityType>
+        <Association Name="FK_Discussion_Employee">
+          <End Type="NewSession1Model.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Discussion" Role="Discussion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Discussion">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discussion_Task">
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Discussion" Role="Discussion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Discussion">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Project_Employee">
+          <End Type="NewSession1Model.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Project" Role="Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="CreatorEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Project_Employee1">
+          <End Type="NewSession1Model.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Project" Role="Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="ResponsibleEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Employee">
+          <End Type="NewSession1Model.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ExecuriveEmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Project">
+          <End Type="NewSession1Model.Project" Role="Project" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_Task">
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="0..1" />
+          <End Type="NewSession1Model.StatusHistory" Role="StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="TaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_TaskStatus">
+          <End Type="NewSession1Model.TaskStatus" Role="TaskStatus" Multiplicity="0..1" />
+          <End Type="NewSession1Model.StatusHistory" Role="StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="OldStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StatusHistory_TaskStatus1">
+          <End Type="NewSession1Model.TaskStatus" Role="TaskStatus" Multiplicity="0..1" />
+          <End Type="NewSession1Model.StatusHistory" Role="StatusHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StatusHistory">
+              <PropertyRef Name="NewStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_TaskStatus">
+          <End Type="NewSession1Model.TaskStatus" Role="TaskStatus" Multiplicity="0..1" />
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TaskStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="StatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Observer">
+          <End Type="NewSession1Model.Employee" Role="Employee" Multiplicity="*" />
+          <End Type="NewSession1Model.Task" Role="Task" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище NewSession1ModelContainer" CdmEntityContainer="NewSession1Entities">
+          <EntitySetMapping Name="Discussion">
+            <EntityTypeMapping TypeName="NewSession1Model.Discussion">
+              <MappingFragment StoreEntitySet="Discussion">
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="NewSession1Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Project">
+            <EntityTypeMapping TypeName="NewSession1Model.Project">
+              <MappingFragment StoreEntitySet="Project">
+                <ScalarProperty Name="ResponsibleEmployeeId" ColumnName="ResponsibleEmployeeId" />
+                <ScalarProperty Name="CreatorEmployeeId" ColumnName="CreatorEmployeeId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FinishScheduledDate" ColumnName="FinishScheduledDate" />
+                <ScalarProperty Name="StartScheduledDate" ColumnName="StartScheduledDate" />
+                <ScalarProperty Name="DeletedTime" ColumnName="DeletedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="FullTitle" ColumnName="FullTitle" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StatusHistory">
+            <EntityTypeMapping TypeName="NewSession1Model.StatusHistory">
+              <MappingFragment StoreEntitySet="StatusHistory">
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="NewStatusId" ColumnName="NewStatusId" />
+                <ScalarProperty Name="OldStatusId" ColumnName="OldStatusId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="NewSession1Model.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Task">
+            <EntityTypeMapping TypeName="NewSession1Model.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="PreviousTaskId" ColumnName="PreviousTaskId" />
+                <ScalarProperty Name="FinishActualTime" ColumnName="FinishActualTime" />
+                <ScalarProperty Name="StartActualTime" ColumnName="StartActualTime" />
+                <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+                <ScalarProperty Name="DeletedTime" ColumnName="DeletedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="ExecuriveEmployeeId" ColumnName="ExecuriveEmployeeId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="FullTitle" ColumnName="FullTitle" />
+                <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaskStatus">
+            <EntityTypeMapping TypeName="NewSession1Model.TaskStatus">
+              <MappingFragment StoreEntitySet="TaskStatus">
+                <ScalarProperty Name="ColorHex" ColumnName="ColorHex" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Observer" TypeName="NewSession1Model.Observer" StoreEntitySet="Observer">
+            <EndProperty Name="Task">
+              <ScalarProperty Name="Id" ColumnName="TaskId" />
+            </EndProperty>
+            <EndProperty Name="Employee">
+              <ScalarProperty Name="Id" ColumnName="EmployeeId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
