@@ -1,0 +1,91 @@
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.exe
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.dll.config
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.deps.json
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.runtimeconfig.json
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.dll
+G:\Storage\C#\Нечто для обучения\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.pdb
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.csproj.AssemblyReference.cache
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\MainWindow.g.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\DashbordPage.g.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\GantPage.g.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\TasksPage.g.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\App.g.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.cache
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.lref
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\MainWindow.baml
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\DashbordPage.baml
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\GantPage.baml
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\Pages\TasksPage.baml
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.g.resources
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.GeneratedMSBuildEditorConfig.editorconfig
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfoInputs.cache
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfo.cs
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.csproj.CoreCompileInputs.cache
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.dll
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\refint\NewDesktop.dll
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.pdb
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.genruntimeconfig.cache
+G:\Storage\C#\Нечто для обучения\NewDesktop\obj\Debug\net7.0-windows\ref\NewDesktop.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.exe
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.dll.config
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.deps.json
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.runtimeconfig.json
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\NewDesktop.pdb
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\DashbordPage.g.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\GantPage.g.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\TasksPage.g.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.lref
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\DashbordPage.baml
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\GantPage.baml
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\Pages\TasksPage.baml
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.g.resources
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfoInputs.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfo.cs
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\refint\NewDesktop.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.pdb
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.genruntimeconfig.cache
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\ref\NewDesktop.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\danii\Desktop\Новая папка (3)\NewDesktop\obj\Debug\net7.0-windows\NewDesktop.csproj.CopyComplete
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.exe
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.dll.config
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.deps.json
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.runtimeconfig.json
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.dll
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\NewDesktop.pdb
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\danii\Desktop\Desktop\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\DashbordPage.g.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\GantPage.g.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\TasksPage.g.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.cache
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop_MarkupCompile.lref
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\DashbordPage.baml
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\GantPage.baml
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\Pages\TasksPage.baml
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.g.resources
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfoInputs.cache
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.AssemblyInfo.cs
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.csproj.CopyComplete
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.dll
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\refint\NewDesktop.dll
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.pdb
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\NewDesktop.genruntimeconfig.cache
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\ref\NewDesktop.dll
+C:\Users\danii\Desktop\Desktop\obj\Debug\net7.0-windows\App.baml

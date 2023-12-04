@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XBGdgsMalJlBaeEN5dGe6GS7B7/8n/W74/BKviZFwDe9DKsxYimTgVsYOzDBpnPwm+Cb18dIXj/72h3OsEW7sA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danii\\Desktop\\Desktop\\NewDesktop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danii\\.nuget\\packages\\livecharts.core\\0.9.8\\livecharts.core.0.9.8.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\livecharts.wpf.core\\0.9.8\\livecharts.wpf.core.0.9.8.nupkg.sha512"
+  ],
+  "logs": []
+}

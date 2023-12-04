@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "LiveCharts.Core/0.9.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Wpf.Core/0.9.8": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts.Core": "0.9.8"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/LiveCharts.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/LiveCharts.Wpf.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "LiveCharts.Core/0.9.8": {
+      "sha512": "USb2TBOeER19X0ar5Zgki1ezjrSXBOmUoz3IqzTeksDm6hoaLFqs3iW9+wjHFuWNQGy9lLcVh2YIhhxVIg+zNQ==",
+      "type": "package",
+      "path": "livecharts.core/0.9.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.dll",
+        "lib/netstandard2.0/LiveCharts.dll",
+        "livecharts.core.0.9.8.nupkg.sha512",
+        "livecharts.core.nuspec"
+      ]
+    },
+    "LiveCharts.Wpf.Core/0.9.8": {
+      "sha512": "jMBdknuG3EOMKA0NaqqwMjhsZpRAzd0UqP0SlwXIBJ+ZoJg5TF9C4rDdKqInEs+RycYmIwmrZWvmfDxsM5MMJw==",
+      "type": "package",
+      "path": "livecharts.wpf.core/0.9.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.Wpf.dll",
+        "lib/net472/LiveCharts.Wpf.dll",
+        "lib/net5.0-windows7.0/LiveCharts.Wpf.dll",
+        "lib/netcoreapp3.1/LiveCharts.Wpf.dll",
+        "livecharts.wpf.core.0.9.8.nupkg.sha512",
+        "livecharts.wpf.core.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "LiveCharts.Wpf.Core >= 0.9.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\danii\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\danii\\Desktop\\Desktop\\NewDesktop.csproj",
+      "projectName": "NewDesktop",
+      "projectPath": "C:\\Users\\danii\\Desktop\\Desktop\\NewDesktop.csproj",
+      "packagesPath": "C:\\Users\\danii\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danii\\Desktop\\Desktop\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\danii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\danii\\Desktop\\Новая папка (4)": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "LiveCharts.Wpf.Core": {
+            "target": "Package",
+            "version": "[0.9.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

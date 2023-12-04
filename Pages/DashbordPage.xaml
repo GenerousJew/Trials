@@ -1,0 +1,96 @@
+﻿<Page x:Class="NewDesktop.Pages.DashbordPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewDesktop.Pages" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DashbordPage">
+
+    <ScrollViewer Width="1000" Height="625">
+        <WrapPanel Width="1000">
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid>
+                    <TextBlock Text="Незавершенных задач:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="FirstBlock" Text="0" FontSize="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid x:Name="SecondGrid">
+                    <TextBlock Text="Просроченных задач:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="SecondBlock" Text="0" FontSize="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid x:Name="ThirdGrid">
+                    <TextBlock Text="Активных задач в текущий момент:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="ThirdBlock" Text="0" FontSize="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid>
+                    <TextBlock Text="Незавершенных задач за текущую неделю:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="FourthBlock" Text="0" FontSize="64" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid>
+                    <TextBlock Text="ТОП5 сотрудников по закрытым задачам в этом месяце:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="FifthBlock" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <Grid>
+                    <TextBlock Text="ТОП5 сотрудников по просроченным задачам в этом месяце:" TextWrapping="Wrap"/>
+
+                    <TextBlock x:Name="SixethBlock" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Width="175" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <StackPanel>
+                    <Button HorizontalAlignment="Center" Width="150" Margin="1.5" Click="EmployeeExport">
+                        <TextBlock Text="Экспорт сотрудников" TextWrapping="Wrap"/>
+                    </Button>
+
+                    <Button HorizontalAlignment="Center" Width="150" Margin="1.5" Click="TasksExport">
+                        <TextBlock Text="Экспорт задач" TextWrapping="Wrap"/>
+                    </Button>
+
+                    <Button HorizontalAlignment="Center" Width="150" Margin="1.5" Click="CloseTasksExport">
+                        <TextBlock Text="Экспорт закрытых задач за текущий месяц" TextWrapping="Wrap" />
+                    </Button>
+
+                    <Button HorizontalAlignment="Center" Width="150" Margin="1.5" Click="OpenTasksExport">
+                        <TextBlock Text="Экспорт открытых задач за следующий месяц" TextWrapping="Wrap"/>
+                    </Button>
+
+                    <Button HorizontalAlignment="Center" Width="150" Margin="1.5" Click="TwoWeekTasksExport">
+                        <TextBlock Text="Экспорт задач за последние 14 дней" TextWrapping="Wrap"/>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <Border Margin="5" Width="360" Height="175" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <lvc:PieChart x:Name="CircleDiagram" LegendLocation="Right"/>
+            </Border>
+
+            <Border Margin="5" Width="545" Height="350" BorderBrush="Black" BorderThickness="1" Padding="5">
+                <ScrollViewer Width="535" Height="340" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+                    <Grid x:Name="HeatGrid"/>
+                </ScrollViewer>
+            </Border>
+        </WrapPanel>
+    </ScrollViewer>
+</Page>

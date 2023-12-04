@@ -1,0 +1,44 @@
+﻿<Window x:Class="NewDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewDesktop"
+        mc:Ignorable="d"
+        Title="MainWindow" MaxHeight="675" MaxWidth="1200" MinHeight="675" MinWidth="1200">
+    <StackPanel x:Name="MainPanel">
+        <StackPanel Orientation="Horizontal" Height="{Binding ActualHeight, ElementName=MainPanel}">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <Button Background="Transparent" Width="150" Height="50" Margin="10" Content="Дашборд" FontSize="20" Click="OpenDashboardClick"/>
+                    <Button Background="Transparent" Width="150" Height="50" Margin="10" Content="Задачи" FontSize="20" Click="OpenTasksClick"/>
+                    <Button Background="Transparent" Width="150" Height="50" Margin="10" Content="Гант" FontSize="20" Click="OpenGantClick"/>
+
+                    <ScrollViewer x:Name="ProjectScroll" Margin="10" VerticalAlignment="Stretch" Width="150" Height="350">
+                        <ListView x:Name="ProjectList" SelectionChanged="ProjectSelectionChanged">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Width="100"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Height="40" Width="40">
+                                        <Label VerticalAlignment="Center" Content="{Binding ShortTitle}" ToolTip="123"/>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollViewer>
+                </StackPanel>
+
+                <Label x:Name="VersionLabel" DockPanel.Dock="Bottom" VerticalContentAlignment="Bottom"/>
+            </DockPanel>
+
+            <StackPanel>
+                <Frame x:Name="ActualPage" NavigationUIVisibility="Hidden"/>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

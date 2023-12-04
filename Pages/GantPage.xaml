@@ -1,0 +1,28 @@
+﻿<Page x:Class="NewDesktop.Pages.GantPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewDesktop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GantPage">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Slider Margin="10" x:Name="MarginSlider" Width="100" Minimum="0" Maximum="10" SmallChange="1" IsSnapToTickEnabled="True" TickFrequency="1" Value="0" ValueChanged="MarginChanged"/>
+            <ComboBox Margin="10" x:Name="TimeBox" Width="100" SelectionChanged="TimeBoxSelected"/>
+            <Button Margin="10" Content="◄" Click="LeftCLick"/>
+            <Label x:Name="TimeRange" Margin="0, 10" Content="01.01.01 — 01.01.01"/>
+            <Button Margin="10" Content="►" Click="RightClick"/>
+            <Button Margin="10" Content="Импорт" Click="ImportCLick"/>
+            <Button Margin="10" Content="Закрыть" Click="CloseClick"/>
+        </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" Width="1000" Height="575">
+            <StackPanel>
+                <Grid x:Name="GantGrid"/>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>
